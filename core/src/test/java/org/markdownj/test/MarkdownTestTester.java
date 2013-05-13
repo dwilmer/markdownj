@@ -59,7 +59,8 @@ public class MarkdownTestTester {
     String test;
     String dir;
 
-    @Parameters(name = "{index}: {1}")
+    //@Parameters(name = "{index}: {1}")
+    @Parameters
     public static Collection<Object[]> markdownTests() {
         List list = new ArrayList<Object[]>();
         URL fileUrl = MarkdownTestTester.class.getResource(MARKDOWN_TEST_DIR);
